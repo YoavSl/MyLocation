@@ -1,0 +1,15 @@
+<resources >
+    <dimen name="toolbar_text_size">18sp</dimen>
+    <dimen name="prediction_margins">10dp</dimen>
+    <dimen name="prediction_text_size">16sp</dimen>
+    <dimen name="search_box_height">50dp</dimen>
+    <dimen name="search_box_horizontal_margins">10dp</dimen>
+    <dimen name="search_box_top_margin">20dp</dimen>
+    <dimen name="my_current_location_frame_layout_horizontal_margins">70dp</dimen>
+    <dimen name="my_current_location_text_size">14sp</dimen>
+    <dimen name="my_current_city_horizontal_margins">31dp</dimen>
+    <dimen name="my_current_city_top_margin">8dp</dimen>
+    <dimen name="my_current_street_horizontal_margins">13dp</dimen>
+    <dimen name="my_current_street_bottom_margin">5dp</dimen>
+
+</resources>

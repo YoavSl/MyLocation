@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <FrameLayout
+        android:id="@+id/mapContainerFL"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <AutoCompleteTextView
+        android:id="@+id/searchACTV"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/search_box_height"
+        android:hint="@string/map_search_box_hint"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/SearchAutoCompleteTextView" />
+
+    <FrameLayout
+        android:id="@+id/myCurrentLocationFL"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        style="@style/MyCurrentLocationFrameLayout">
+
+        <TextView
+            android:id="@+id/myCurrentCityTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            style="@style/MyCurrentCityTextView" />
+
+        <TextView
+            android:id="@+id/myCurrentStreetTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:gravity="center_horizontal"
+            style="@style/MyCurrentStreetTextView" />
+
+    </FrameLayout>
+
+</android.support.constraint.ConstraintLayout>

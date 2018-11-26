@@ -1,0 +1,87 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar" >
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar" parent="Theme.MaterialComponents.Light.NoActionBar" >
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="Toolbar" >
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">?attr/actionBarSize</item>
+        <item name="android:background">?attr/colorPrimary</item>
+    </style>
+
+    <style name="AppToolbarText" parent="TextAppearance.AppCompat.Display3" >
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">@dimen/toolbar_text_size</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="AutoCompleteTextView" >
+        <item name="android:padding">10dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="SearchAutoCompleteTextView" parent="AutoCompleteTextView" >
+        <item name="android:layout_marginStart">@dimen/search_box_horizontal_margins</item>
+        <item name="android:layout_marginLeft">@dimen/search_box_horizontal_margins</item>
+        <item name="android:layout_marginEnd">@dimen/search_box_horizontal_margins</item>
+        <item name="android:layout_marginRight">@dimen/search_box_horizontal_margins</item>
+        <item name="android:layout_marginTop">@dimen/search_box_top_margin</item>
+        <item name="android:background">@drawable/border_map_search_box</item>
+        <item name="android:imeOptions">actionSearch</item>
+        <item name="android:drawableStart">@drawable/ic_search</item>
+        <item name="android:drawableLeft">@drawable/ic_search</item>
+        <item name="android:drawablePadding">10dp</item>
+    </style>
+
+    <style name="PlacePredictionTextView" >
+        <item name="android:layout_margin">@dimen/prediction_margins</item>
+        <item name="android:textSize">@dimen/prediction_text_size</item>
+    </style>
+
+    <style name="MyCurrentLocationFrameLayout" >
+        <item name="android:layout_marginStart">@dimen/my_current_location_frame_layout_horizontal_margins</item>
+        <item name="android:layout_marginLeft">@dimen/my_current_location_frame_layout_horizontal_margins</item>
+        <item name="android:layout_marginEnd">@dimen/my_current_location_frame_layout_horizontal_margins</item>
+        <item name="android:layout_marginRight">@dimen/my_current_location_frame_layout_horizontal_margins</item>
+        <item name="android:background">@drawable/shape_half_circle</item>
+    </style>
+
+    <style name="MyCurrentLocationTextView" >
+        <item name="android:textSize">@dimen/my_current_location_text_size</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="MyCurrentCityTextView" parent="MyCurrentLocationTextView" >
+        <item name="android:layout_marginStart">@dimen/my_current_city_horizontal_margins</item>
+        <item name="android:layout_marginLeft">@dimen/my_current_city_horizontal_margins</item>
+        <item name="android:layout_marginEnd">@dimen/my_current_city_horizontal_margins</item>
+        <item name="android:layout_marginRight">@dimen/my_current_city_horizontal_margins</item>
+        <item name="android:layout_marginTop">@dimen/my_current_city_top_margin</item>
+    </style>
+
+    <style name="MyCurrentStreetTextView" parent="MyCurrentLocationTextView" >
+        <item name="android:layout_marginStart">@dimen/my_current_street_horizontal_margins</item>
+        <item name="android:layout_marginLeft">@dimen/my_current_street_horizontal_margins</item>
+        <item name="android:layout_marginEnd">@dimen/my_current_street_horizontal_margins</item>
+        <item name="android:layout_marginRight">@dimen/my_current_street_horizontal_margins</item>
+        <item name="android:layout_marginBottom">@dimen/my_current_street_bottom_margin</item>
+    </style>
+
+</resources>
